@@ -1,0 +1,13 @@
+npm install
+bower install
+bower install bootstrap --save
+npm install typescript -g
+gulp build
+gulp serve
+
+tsc app/to-do.ts
+tsc --out build/js/app.js app/*.ts
+tsc -w
+
+Troubleshooting
+If the above steps have been completed and there are still errors relating to dependencies, try deleting the node_modules and bower_components folders and then rerunning the npm and bower install commands.
